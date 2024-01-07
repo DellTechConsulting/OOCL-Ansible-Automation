@@ -17,8 +17,7 @@
             wsman:
               username: "{{ idrac_user }}"
               password: "{{ idrac_password }}"
-      register: discovery_job
-           
+      register: discovery_job        
   rescue:
     - debug:
         msg: "Job Discovery failed"
