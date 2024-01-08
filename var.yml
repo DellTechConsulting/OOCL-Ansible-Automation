@@ -17,7 +17,7 @@ var_device_type: "SERVER"
 ############## Deploy Template ##############
 
 template_name: "hk3k8snpflg0625"
-device_service_tag: ""
+device_service_tag: "496BHV2"
 # device_id: ""
 
 ############## IDRAC Details - OS Provisioning ##############
