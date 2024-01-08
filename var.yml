@@ -16,7 +16,7 @@ var_device_type: "SERVER"
 
 ############## Deploy Template ##############
 
-template_name: ""
+template_name: "hk3k8snpflg0625"
 device_service_tag: ""
 # device_id: ""
 
