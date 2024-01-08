@@ -6,8 +6,8 @@
       dellemc.openmanage.idrac_os_deployment:
         validate_certs: false
         idrac_ip: "{{ item.idrac_ip }}"
-        idrac_user: "{{ item.idrac_user }}"
-        idrac_password: "{{ item.idrac_password }}"
+        idrac_user: "{{ idrac_user }}"
+        idrac_password: "{{ idrac_password }}"
         share_name: "{{ iso_path }}"
         iso_image: "{{ iso_name }}"
         expose_duration: 180
