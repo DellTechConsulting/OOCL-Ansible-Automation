@@ -12,7 +12,11 @@
         device_service_tag:
           - "{{ device_service_tag }}"
       register: deploy_template    
-
+      
+    - name: debug the deploy configuartion template information
+      ansible.builtin.debug:
+        msg: "{{ deploy_template }}"
+        
   rescue:
       - debug:
           msg: "Deploy Template failed"
