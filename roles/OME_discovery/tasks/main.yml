@@ -10,7 +10,7 @@
         discovery_job_name: "discovery_job"
         discovery_config_targets:
           - network_address_detail:
-              - "{{ item.idrac_ip }}"
+              - "{{ item }}"
             device_types:
               - "{{ var_device_type }}"
             wsman:

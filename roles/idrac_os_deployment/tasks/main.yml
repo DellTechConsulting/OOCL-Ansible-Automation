@@ -4,14 +4,14 @@
     - name: Booting to Network Operating System image
       dellemc.openmanage.idrac_os_deployment:
         validate_certs: false
-        idrac_ip: "{{ item.idrac_ip }}"
+        idrac_ip: "{{ item }}"
         idrac_user: "{{ idrac_user }}"
         idrac_password: "{{ idrac_password }}"
         share_name: "{{ iso_path }}"
         iso_image: "{{ iso_name }}"
         expose_duration: 180
       register: os_deployment
-      delegate_to: "{{ item.idrac_ip }}"
+      delegate_to: "{{ item }}"
       with_items:
         - "{{ idrac_details }}"    
 
