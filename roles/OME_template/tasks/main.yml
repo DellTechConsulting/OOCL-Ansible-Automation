@@ -11,11 +11,20 @@
         template_name: "{{ template_name }}"
         device_service_tag:
           - "{{ device_service_tag }}"
+<<<<<<< HEAD
       register: deploy_template
 
     - name: debug the deploy configuartion template information
       ansible.builtin.debug:
         msg: "{{ deploy_template }}"
+=======
+      register: deploy_template    
+      
+    - name: debug the deploy configuartion template information
+      ansible.builtin.debug:
+        msg: "{{ deploy_template }}"
+        
+>>>>>>> 80b2c0405cdee07dc3f1a4492a52c9c20d9f6b73
   rescue:
       - debug:
           msg: "{{ deploy_template }}" 
