@@ -1,4 +1,3 @@
-
 ---
 ############## OME Details ##############
 
@@ -6,31 +5,31 @@ ome_hostname: ""
 ome_username: ""
 
 
-
 ############## Discover Jobs Idrac-details ##############
 
 
-var_ip_range: "10.222.181.206 - 10.222.181.224"
 idrac_user: ""
-
+var_device_type: "SERVER"
 
 ############## Deploy Template ##############
 
-template_name: ""
-device_service_tag: ""
+template_name: "hk3k8snpflg0625"
+device_service_tag: "496BHV2"
 # device_id: ""
 
 ############## IDRAC Details - OS Provisioning ##############
 
 
 idrac_details:
-
-- { idrac_ip: '10.222.181.204', idrac_user: '', idrac_password: '' }
-- { idrac_ip: '10.222.181.206', idrac_user: '', idrac_password: '' }
-- { idrac_ip: '10.222.181.208', idrac_user: '', idrac_password: '' }
-- { idrac_ip: '10.222.181.220', idrac_user: '', idrac_password: '' }
-- { idrac_ip: '10.222.181.222', idrac_user: '', idrac_password: '' }
-- { idrac_ip: '10.222.181.224', idrac_user: '', idrac_password: '' }
+ - { idrac_ip: '10.222.181.204' }
+ - { idrac_ip: '10.222.181.206' }
+ - { idrac_ip: '10.222.181.208' }
+ - { idrac_ip: '10.222.181.220' }
+ - { idrac_ip: '10.222.181.222' }
+ - { idrac_ip: '10.222.181.224' }
 
 iso_path: "10.222.153.165:/home/iso/"
 iso_name: "rhel-8.4-x86_64-dvd.iso"
+
+
+############################

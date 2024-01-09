@@ -1,4 +1,3 @@
-
 ---
 - hosts: localhost
   connection: local
@@ -17,8 +16,7 @@
         name: OME_template
       tags:
         - deploy_template
-        
-        
+                
     - include_role:
         name: idrac_os_deployment
       tags:
