@@ -18,6 +18,6 @@
         msg: "{{ deploy_template }}"
   rescue:
       - debug:
-          msg: " Deploy Template Failed "
+          msg: "Deploy Template Failed"
   tags:
     - deploy_template
