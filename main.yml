@@ -4,7 +4,7 @@
   gather_facts: false
   vars_files: 
     - var.yml
-    - credentials.yml
+    - secret.yml
       
   tasks:
     - include_role:
